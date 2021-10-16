@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f19b25fb2d.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.onlygfx.com/wp-content/uploads/2018/09/4-clipart-sun-1.png" type="image/x-icon">
+    <title>Weather App</title>
 </head>
 <body>
+    <div id="wrapper">
+        <form action="" id="search-bar" onsubmit="return false">
+            <input type="text" placeholder="Enter city name" id="city-input" autocomplete="off" required>
+            <button><i class="fas fa-search"></i></button>
+            <p id="not-found-error">City not found</p>
+        </form>
+        <div id="info">
+            <h1 id="city-name"></h1>
+            <h2 id="weather-status"></h2>
+            <h1 id="temperature"></h1>
+            <div id="hourly-weather">
+
+            </div>
+            <div days-weather>
+
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
