@@ -9,9 +9,11 @@ export function setDaytimeTheme() {
             var currentTime = response.dt;
             if(sunriseTime < currentTime && currentTime < sunsetTime){
                 document.body.style.backgroundImage = "url(https://rh7soccershow.co.za/wp-content/uploads/2019/03/sunny-day-white-sky-4k-time-lapse_ekyxov3___F0000.png)";
+                // document.querySelector('.rain').style.opacity = "0";
             }
-            else if (currentTime > sunsetTime) {
+            else if (currentTime >= sunsetTime) {
                 document.body.style.backgroundImage = "url(https://coolwallpapers.me/picsup/3050399-milky-way_night_sky_stars.jpg)";
+                // document.querySelector('.rain').style.opacity = "0";
             }
         })
 }

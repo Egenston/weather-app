@@ -7,6 +7,7 @@ export function setSearchBar() {
         if(document.getElementById('search-bar').style.width == "50px"){
             document.getElementById('search-bar').style.width = "400px";
             cityInput.style.paddingRight = "60px";
+            cityInput.disabled = false;
         }
         else checkWeather(cityInput.value) 
     })
